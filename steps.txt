@@ -1,3 +1,5 @@
 //npm init 
 npm i types/node
-
+npm i prompt-sync
+  "@types/node": "^18.7.23",
+    "prompt-sync": "^4.2.0"
