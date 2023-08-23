@@ -30,3 +30,10 @@ console.log(path.format({
     base: 'file.txt',
   }))
   // Returns: 'C:\\path\\dir\\file.txt' 
+
+
+console.log(  path.join('/foo', 'bar', 'baz/asdf', 'quux', '..'))
+// Returns: '/foo/bar/baz/asdf'
+
+console.log(path.join('foo', {}, 'bar'))
+// Throws 'TypeError: Path must be a string. Received {}' 
