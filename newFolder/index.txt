@@ -1,0 +1,43 @@
+this is a new file i created now
+
+fs.writeFile(path.join(__dirname , "esther" , "esther.txt"),"message",(error):void=>{
+    if(error){
+        console.log("failed to create file")
+    }else{
+        console.log("file has been created")
+    }
+
+    fs.appendFile(path.join(__dirname , "esther" , "esther.txt"), "Update" , (error)=>{
+        if(error){
+            console.log(error)
+        }else{
+            console.log("appendFile")
+        }
+    })
+})
+
+fs.readFile(path.join(__dirname , "esther" , "esther.txt") , "utf-8" , (error , data):void=>{
+    if(error){
+        console.log(error)
+    }else{
+        console.log(data)
+    }
+})
+
+fs.mkdir("./myName , (error)=>{
+    if(error){
+        console.log("error")
+    }else{
+console.log("failed to create folder")
+    }
+})
+
+if(!fs.existsSync("./myname")){
+    fs.mkdir("./myname" , (err):void=>{
+        if(err){
+            console.log("failed to create folder")
+        }else{
+            console.log("folder created")
+        }
+    })
+}

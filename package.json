@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node-dev --respawn --transpile-only ./Path.ts"
+    "start": "ts-node-dev --respawn --transpile-only ./FS.ts"
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,5 @@
+import prompt from "prompt-sync"
+
 while (true) {
     const prompt = require("prompt-sync")();
     let num: number = Math.floor(Math.random() * 10);
